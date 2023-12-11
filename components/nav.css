@@ -1,0 +1,57 @@
+body {
+    padding: 2%;
+  }
+  
+  .navig-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .image {
+   width: 12%;
+   height: 65%;
+  }
+  
+  .logo-header {
+    display: flex;
+  }
+  
+  .title {
+    padding-left: 5%;
+  }
+  
+  .navBar {
+    display: flex;
+    grid-gap: 25%;
+    list-style: none;
+    padding-right: 10%;
+    text-decoration: none;
+  }
+  
+  /* for noneactiv router */
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .active {
+    text-decoration: underline;
+  }
+  
+  .active a {
+    text-decoration: underline;
+  }
+  /* Remove the ::after pseudo-element from .dropdown-toggle */
+.dropdown-toggle::after {
+  content: none;
+}

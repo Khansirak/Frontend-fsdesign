@@ -1,0 +1,17 @@
+.rows {
+    height: 5px;
+    width: 10px !important;
+}
+.rows td {
+    
+    padding: 0;
+}
+.thead{
+    height: 1%;
+}
+
+textarea{
+    padding: 0;
+    width: 100%;
+}
+
