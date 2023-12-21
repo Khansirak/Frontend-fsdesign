@@ -35,10 +35,9 @@ steps:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     publishLocation: 'pipeline'
   displayName: 'Publish npm artifact' 
-- task: AzureRmWebAppDeployment@4
+- task: AzureWebApp@1
   inputs:
-    ConnectionType: 'AzureRM'
     azureSubscription: 'SUB-BAKERHICKS-FUNCTIONALSPECIFICATIONTOOL-DV-SC'
     appType: 'webAppLinux'
-    WebAppName: 'wa-uks-bakerhicks-functionalspecificationtoolfrontend-dv'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    appName: 'wa-uks-bakerhicks-functionalspecificationtoolbackend-dv'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
